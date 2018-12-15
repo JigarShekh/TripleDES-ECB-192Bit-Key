@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Key (Max 24)"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLength="24"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:background="@android:drawable/editbox_background_normal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter PlainText/EncryptedText"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtPlainText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:textSize="14sp"
+        android:background="@android:drawable/editbox_background_normal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEncrypt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Encrypt"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnDecrypt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Decrypt"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encrypted/Decrypted Text"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtResult"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:scrollbars="vertical"
+            android:textSize="14sp"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encrypted/Decrypted Text (In Hex)"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtHex"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:scrollbars="vertical"
+            android:textSize="14sp"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+    </LinearLayout>
+
+</LinearLayout>
